@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 4.2.2</title>
+    <style>
+        * {
+            font-family: Arial, serif;
+        }
+
+        .background {
+            background-color: #ececec;
+            min-width: 1700px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: darkorange;
+            padding: 15px 15px 15px 150px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 45px;
+        }
+
+        .search-box {
+            margin-left: 120px;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            padding-left: 25px;
+            width: 300px;
+            background-color: #333333;
+            color: white;
+            font-size: 15px;
+        }
+
+        .links {
+            color: darkblue;
+            margin-right: 105px;
+            margin-left: 150px;
+            margin-top: 50px;
+        }
+
+        .main-container {
+            display: flex;
+        }
+
+        .photos1 img {
+            height: 80px;
+            width: 80px;
+        }
+
+        .friends img {
+            border-radius: 50px;
+        }
+
+        .column-3 {
+            margin-right: 150px;
+        }
+
+        .column-3 div {
+            /*border: 1px solid black;*/
+        }
+
+        hr {
+            width: 80%;
+            border: 0.5px solid darkgrey;
+        }
+
+        .row2 img {
+            height: 140px;
+            width: 160px;
+        }
+
+        .row3 img {
+            height: 50px;
+            width: 50px;
+            border-radius: 100px;
+        }
+
+        .item123 div {
+            padding-top: 5px;
+        }
+
+        .x123 div {
+            padding-top: 5px;
+        }
+
+        .second-column {
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 80px;
+        }
+
+        .sc-row1 {
+            display: flex;
+            align-items: center;
+            background-color: lightblue;
+            padding: 10px 20px;
+            width: 800px;
+            justify-content: space-between;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .row1settings {
+            padding-right: 20px;
+        }
+
+        .button2 {
+            padding: 10px;
+            margin-left: 80px;
+
+        }
+
+        hr {
+            margin: 0px;
+            width: 100%;
+        }
+
+        .sc-row2 {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .search-box2 {
+            flex-grow: 1;
+            padding: 15px 20px;
+            border: 0px;
+            font-weight: bold;
+        }
+
+        .sc-row3andup {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .profile123 {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+        }
+
+        .profile1234 {
+            width: 70px;
+            height: 70px;
+            border-radius: 100px;
+        }
+
+        .column-3-row-1 {
+            margin-left: 50px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+        }
+
+        .column-3-row-2 {
+            margin-left: 50px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 80px;
+            padding: 10px 20px;
+        }
+
+        .column123 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .recommendation123 {
+            display: flex;
+            padding: 30px 10px;
+            flex-direction: column;
+        }
+
+        .person456 {
+            padding-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class="background">
+    <div class="header">
+        <div class="logo" style="font-weight: bold">
+            XYZ
+        </div>
+        <input type="text" placeholder="🔍   Поиск..." class="search-box">
+    </div>
+    <div class="main-container">
+        <div class="links">
+            <p>Личный кабинет</p>
+            <p>Актуальное</p>
+            <p>Чаты</p>
+            <p>Знакомые</p>
+            <p>Коллективы</p>
+            <p>Изображения</p>
+            <p>Плейлисты</p>
+            <p>Клипы</p>
+        </div>
+        <div class="second-column">
+            <div class="sc-row1">
+                <div class="row1settings">
+                    Все подписчики
+                </div>
+                <div class="row1settings">
+                    128
+                </div>
+                <div class="row1settings">
+                    Подписчики онлайн
+                </div>
+                <div class="row1settings">
+                    28
+                </div>
+                <div class="row1settings">
+                    <button class="button2">
+                        Найти подписчиков
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class="sc-row2">
+                <input class="search-box2" type="text" placeholder="🔍     Поиск сайт">
+            </div>
+            <hr>
+            <div class="sc-row3andup">
+                <div>
+                    <img class="profile123" src="pexels-pixabay-39866.jpg">
+                </div>
+                <div style="margin-left: -420px">
+                    <div style="font-weight: bold">
+                        Бексултан Бексултанович
+                    </div>
+                    <div>
+                        КИМЕП
+                    </div>
+                    <div style="color: blue">
+                        Добавить
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        - - -
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="sc-row3andup">
+                <div>
+                    <img class="profile123" src="pexels-pixabay-39866.jpg">
+                </div>
+                <div style="margin-left: -420px">
+                    <div style="font-weight: bold">
+                        Бексултан Бексултанович
+                    </div>
+                    <div>
+                        КИМЕП
+                    </div>
+                    <div style="color: blue">
+                        Добавить
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        - - -
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="sc-row3andup">
+                <div>
+                    <img class="profile123" src="pexels-pixabay-39866.jpg">
+                </div>
+                <div style="margin-left: -420px">
+                    <div style="font-weight: bold">
+                        Бексултан Бексултанович
+                    </div>
+                    <div>
+                        КИМЕП
+                    </div>
+                    <div style="color: blue">
+                        Добавить
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        - - -
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="sc-row3andup">
+                <div>
+                    <img class="profile123" src="pexels-pixabay-39866.jpg">
+                </div>
+                <div style="margin-left: -420px">
+                    <div style="font-weight: bold">
+                        Бексултан Бексултанович
+                    </div>
+                    <div>
+                        КИМЕП
+                    </div>
+                    <div style="color: blue">
+                        Добавить
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        - - -
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="sc-row3andup">
+                <div>
+                    <img class="profile123" src="pexels-pixabay-39866.jpg">
+                </div>
+                <div style="margin-left: -420px">
+                    <div style="font-weight: bold">
+                        Бексултан Бексултанович
+                    </div>
+                    <div>
+                        КИМЕП
+                    </div>
+                    <div style="color: blue">
+                        Добавить
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        - - -
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="sc-row3andup">
+                <div>
+                    <img class="profile123" src="pexels-pixabay-39866.jpg">
+                </div>
+                <div style="margin-left: -420px">
+                    <div style="font-weight: bold">
+                        Бексултан Бексултанович
+                    </div>
+                    <div>
+                        КИМЕП
+                    </div>
+                    <div style="color: blue">
+                        Добавить
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        - - -
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="sc-row3andup">
+                <div>
+                    <img class="profile123" src="pexels-pixabay-39866.jpg">
+                </div>
+                <div style="margin-left: -420px">
+                    <div style="font-weight: bold">
+                        Бексултан Бексултанович
+                    </div>
+                    <div>
+                        КИМЕП
+                    </div>
+                    <div style="color: blue">
+                        Добавить
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        - - -
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="sc-row3andup">
+                <div>
+                    <img class="profile123" src="pexels-pixabay-39866.jpg">
+                </div>
+                <div style="margin-left: -420px">
+                    <div style="font-weight: bold">
+                        Бексултан Бексултанович
+                    </div>
+                    <div>
+                        КИМЕП
+                    </div>
+                    <div style="color: blue">
+                        Добавить
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        - - -
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column-3">
+            <div class="column-3-row-1">
+                <div class="column123" style="font-weight: bold; color: blue">
+                    Новые события ✨
+                </div>
+                <div class="column123">
+                    Мероприятия 🪄
+                </div>
+                <div class="column123">
+                    Настройки ⭐
+                </div>
+                <div class="column123">
+                    Посты 🚀
+                </div>
+                <div class="column123">
+                    Стриминг 🎥
+                </div>
+                <div class="column123">
+                    Списки 📋
+                </div>
+            </div>
+            <div class="column-3-row-2">
+                <div style="padding-top: 10px; padding-bottom: 10px">
+                    Рекомендации
+                </div>
+                <div class="recommendation123">
+                    <div class="person456">
+                        <div>
+                            <img class="profile1234" src="pexels-pixabay-39866.jpg">
+                        </div>
+                        <div style="margin-left: 30px">
+                            <div style="font-weight: bold">
+                                Мират Миратович
+                            </div>
+                            <div>
+                                Сатпаев
+                            </div>
+                            <div style="color: blue">
+                                + Добавить заметку
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person456">
+                        <div>
+                            <img class="profile1234" src="pexels-pixabay-39866.jpg">
+                        </div>
+                        <div style="margin-left: 30px">
+                            <div style="font-weight: bold">
+                                Мират Миратович
+                            </div>
+                            <div>
+                                Сатпаев
+                            </div>
+                            <div style="color: blue">
+                                + Добавить заметку
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person456">
+                        <div>
+                            <img class="profile1234" src="pexels-pixabay-39866.jpg">
+                        </div>
+                        <div style="margin-left: 30px">
+                            <div style="font-weight: bold">
+                                Мират Миратович
+                            </div>
+                            <div>
+                                Сатпаев
+                            </div>
+                            <div style="color: blue">
+                                + Добавить заметку
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
